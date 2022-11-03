@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Stick+No+Bills:wght@200;300;400;500;600;700;800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vp;
+    height: 100vh;
+    background-image: url('https://img.freepik.com/darmowe-zdjecie/bezowe-drewniane-podlogi-teksturowane-tlo_53876-129605.jpg?w=2000');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: 'Stick No Bills', sans-serif;
+}
+
+.section {
+    width: 350px;
+    background-color: white;
+    box-shadow: 0 0 20px black;
+}
+
+.header {
+   display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 150px;
+    text-transform: uppercase;
+    border-bottom: 1px dashed black;
+}
+
+h1 {
+    font-size: 36px;
+}
+
+p {
+    margin-top: 10px;
+}
+
+.content {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    padding: 20px 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 16px;
+}
+
+input, 
+select {
+    height: 30px;
+    margin-bottom: 10px;
+    width: 100%;
+    border-radius: 5px;
+    border: 1px dotted black;
+}
+
+.buttons {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.count,
+.reset {
+    margin: 10px;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: 1px outset black;
+    background-color: lightgrey;
+    border-radius: 10px;
+    font-family: 'Stick No Bills', sans-serif;
+    height: 50px;
+    transition: 1s;
+}
+
+.reset {
+    background-color: black;
+    color: white;
+}
+
+.reset:hover {
+    transform: scale(1.1);
+}
+
+.count:hover {
+    background-color: gray;
+    transform: scale(1.1);
+}
+
+.cost-info {
+    display: none;
+    font-size: 16px;
+}
+
+.cost {
+    font-weight: bold;
+}
+
+.error {
+    font-size: 16px;
+    color: red;
+    text-align: center;
+}
